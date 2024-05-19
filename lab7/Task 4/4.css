@@ -1,0 +1,17 @@
+.tab-panel {
+    display: flex;
+  }
+  
+.tab-panel button {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.tab-panel button.active {
+    background-color: #e892de;
+  }
+  
