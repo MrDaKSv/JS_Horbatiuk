@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrapper">
+    <header id="header">
+        <h1>Welcome to our website</h1>
+        <div class="overallPrice"></div>
+    </header>
+    <main id="main">
+        <div id="elementHandler">
+            <button class="createProductButton">Append New Product</button>
+            <div class="searchProductDiv">
+                <input type="text" class="searchInputField" placeholder="Введіть запит">
+                <button class="downloadJSONButton">Upload</button>
+            </div>
+        </div>
+        <div id="productElementsDiv">
+        </div>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</div>
+
+<div class="popup">
+    <div class="popupBody">
+        <div class="popupContent">
+            <h3 class="popupClose">X</h3>
+            <div class="popupTitle">Введіть нове значення</div>
+            <div class="popupInput">
+                <label>
+                    <input type="text" class="popupInputField" placeholder="Введіть нове значення">
+                </label>
+                <button class="popupSaveChangesButton">Зберегти Зміни</button>
+            </div>
+            <div class="popupText">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
