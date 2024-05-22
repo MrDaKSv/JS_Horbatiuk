@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <h2 class="heading">Memory Game</h2>
+    <h3 class="description">Guess all the cards</h3>
+
+    <div id="settings">
+        <label for="difficulty">Select difficulty:</label>
+        <select id="difficulty">
+            <option value="12">Easy (12 cards)</option>
+            <option value="16">Medium (16 cards)</option>
+            <option value="20">Hard (20 cards)</option>
+        </select>
+
+        <label for="card-set">Select card set:</label>
+        <select id="card-set">
+            <option value="fruits">Fruits</option>
+            <option value="animals">Animals</option>
+            <option value="emojis">Emojis</option>
+        </select>
+    </div>
+    <br>
+
+    <button type="button" id="new-game-button">New Game</button>
+    <br>
+    <div id="game-board"></div>
+    <div id="game-info">
+        <p>Time: <span id="timer">0:00</span></p>
+        <p>Moves: <span id="move-counter">0</span></p>
+    </div>
+    <h2 id="victory-message"></h2>
+
+    <script src="./main.js"></script>
+</body>
+</html>
