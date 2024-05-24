@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lamp Control</title>
+</head>
+<body>
+
+<div id="lamp" onclick="toggleLamp()">
+  <img id="lampImg" src="img/photo_1_2024-04-08_20-09-14.jpg" alt="Off" width="180" height="200">
+</div>
+<br>
+<label for="lampType">Choose lamp type:</label>
+<select id="lampType" onchange="changeLampType()">
+  <option value="incandescent">Incandescent</option>
+  <option value="energySaving">Energy Saving</option>
+  <option value="led">LED</option>
+</select>
+<br><br>
+
+<button onclick="toggleLamp()">Toggle Lamp</button>
+<button onclick="changeBrightness()">change brightness</button>
+
+<script src="index.js"></script>
+
+
+</body>
+</html>

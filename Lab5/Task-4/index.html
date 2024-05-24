@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; }
+        .form-group input { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { padding: 10px 15px; cursor: pointer; }
+        .product-list, .order-list { margin-top: 20px; }
+        .product-item, .order-item { padding: 10px; border: 1px solid #ddd; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Inventory Management System</h1>
+
+        <div>
+            <h2>Add Product</h2>
+            <div class="form-group">
+                <label for="productName">Name:</label>
+                <input type="text" id="productName">
+            </div>
+            <div class="form-group">
+                <label for="productPrice">Price:</label>
+                <input type="number" id="productPrice">
+            </div>
+            <div class="form-group">
+                <label for="productQuantity">Quantity:</label>
+                <input type="number" id="productQuantity">
+            </div>
+            <button id="addProductBtn">Add Product</button>
+        </div>
+
+        <div>
+            <h2>Update Product</h2>
+            <div class="form-group">
+                <label for="updateProductId">Product ID:</label>
+                <input type="number" id="updateProductId">
+            </div>
+            <div class="form-group">
+                <label for="updateProductPrice">New Price:</label>
+                <input type="number" id="updateProductPrice">
+            </div>
+            <div class="form-group">
+                <label for="updateProductQuantity">New Quantity:</label>
+                <input type="number" id="updateProductQuantity">
+            </div>
+            <button id="updateProductBtn">Update Product</button>
+        </div>
+
+        <div>
+            <h2>Delete Product</h2>
+            <div class="form-group">
+                <label for="deleteProductId">Product ID:</label>
+                <input type="number" id="deleteProductId">
+            </div>
+            <button id="deleteProductBtn">Delete Product</button>
+        </div>
+
+        <div>
+            <h2>Find Product</h2>
+            <div class="form-group">
+                <label for="findProductName">Product Name:</label>
+                <input type="text" id="findProductName">
+            </div>
+            <button id="findProductBtn">Find Product</button>
+        </div>
+
+        <div>
+            <h2>Place Order</h2>
+            <div class="form-group">
+                <label for="orderProductId">Product ID:</label>
+                <input type="number" id="orderProductId">
+            </div>
+            <div class="form-group">
+                <label for="orderQuantity">Quantity:</label>
+                <input type="number" id="orderQuantity">
+            </div>
+            <button id="placeOrderBtn">Place Order</button>
+        </div>
+
+        <div class="product-list">
+            <h2>Product List</h2>
+            <div id="productList"></div>
+        </div>
+
+        <div class="order-list">
+            <h2>Order List</h2>
+            <div id="orderList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
